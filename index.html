@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link href='style.css' rel='stylesheet' />
+    
+    <title>Expence Management</title>
+  </head>
+  <header>
+    <div class="header-title">
+      <h3>Expences Manager</h3>
+    </div>  
+  </header>
+  <body>
+    <div class="form-container">
+
+      <form action="#" method="post">
+
+        <input id="date" class="date" type="date" name="date" placeholder="Date">
+
+        <div id="title" class="title">
+          <select class="drpdown-menu" name="dropdown" id="dropdown" >
+            
+              <option value="" disabled selected>Select a Title</option>
+              <option value="Health">Health</option>
+              <option value="entertainment">entertainment</option>
+              <option value="transportation">transportation</option>
+            
+          </select>
+        </div><!--.title-->
+
+        <div class="amount-wrapper">
+          <input id="amount" class="amount" type="text" name="amount" placeholder="how much you spent">
+        </div>
+        
+        <div class="description-wrapper">
+          <input id="description" class="description" type="textarea" name="description" placeholder="Description">
+        </div>
+
+        <div class="save-btn">
+          <button id="submit-btn" class="submit-btn" type="submit"><label>Save</label></button>
+        </div><!--.save-btn-->
+
+      </form>
+
+      <!--TABLE-->
+
+      <div  id="data" class="data-table">
+        <table id="expences">
+          <tr>
+            <th>Date</th>
+            <th>Title</th>
+            <th>Amount</th>
+            <th>Descirption</th>
+            <th>Action</th>
+          </tr>
+          <tbody>
+          <tr>
+            <!-- <td>test date</td>
+            <td>test title</td>
+            <td>test amount</td>
+            <td>test discription</td>
+            <td> <span id="buttons"><input type="button" value="Edit" onclick="editRow(this)"> <input type="button" value="Delete" onclick="deleteRow(this)"></span> </td> -->
+          </tr>
+        </tbody>
+        </table>
+      </div>
+      
+
+    </div><!--.form-container-->
+
+
+
+    
+  </body>
+
+  <footer>
+    <script src='index.js'></script>
+  </footer>
+</html>
