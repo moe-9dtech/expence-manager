@@ -1,0 +1,58 @@
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link href='style.css' rel='stylesheet' />
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+    <title>Expence Management</title>
+  </head>
+  <header>
+    <div class="header-title">
+      <h3>Add Your Budget For Each Category</h3>
+    </div>  
+  </header>
+  <body>
+    <div class="form-container">
+
+      <form action="#" method="post">
+
+        <div class="row">
+            <div class="column lable-col">
+                <div class="row"></div>
+                <label class="budget-label">Health: </label>
+                <label class="budget-label">Food: </label>
+                <label class="budget-label">Loan: </label>
+                <label class="budget-label">entertainment: </label>
+                <label class="budget-label">Transportation: </label>
+            </div><!--.lable-col -->
+
+            <div class="column inpt-col">
+                <input id="health" class="helth-budget budget-input" type="text" name="amount" placeholder="Health budget">
+                <input id="food" class="food-budget budget-input" type="text" name="food" placeholder="Food Budget">
+                <input id="loan" class="loan-budget budget-input" type="text" name="loan" placeholder="Loan Budget">
+                <input id="entertainment" class="entertainment-budget budget-input" type="text" name="entertainment" placeholder="entertainment Budget">
+                <input id="transportation" class="transportation-budget budget-input" type="text" name="transportation" placeholder="Transportation Budget">
+            </div><!--.inpt-col-->
+
+        </div>
+
+
+        <div class="save-btn">
+          <button id="submit-btn" class="submit-btn" type="submit"><label>Save</label></button>
+        </div><!--.save-btn-->
+
+      </form>
+
+      <!--TABLE-->
+
+      
+    
+  </body>
+
+  <footer>
+    
+    <script src='budget.js'></script>
+    
+  </footer>
+</html>

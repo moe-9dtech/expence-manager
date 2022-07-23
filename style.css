@@ -3,7 +3,9 @@
  *     Expences Management CSS    
  * =============================
  */
-
+ * {
+    box-sizing: border-box;
+  }
  /* Header Section */
  .header-title {
     text-align: center;
@@ -74,5 +76,80 @@ table {
     text-align: left;
     padding: 8px;
   }
+
+.navigation {
+    text-align: center;
+}
   
+.chart {
+    display : inline-block;
+    margin: 50px 10px 60px 0;
+}
+
+.chart-page-btn {
+    border: none;
+    background-color: #ffeb3b;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.chart .chart-icon:hover {
+    cursor: pointer;
+}
+
+.budget {
+    display: inline-block;
+    margin: 50px 0 60px 0;
+}
+
+.budget-page-btn {
+    border: none;
+    background-color: #ffeb3b;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.budget .budget-icon:hover {
+    cursor: pointer;
+}
+
+
+
+/********************************
+            Budget Page
+*********************************/
+.budget-input {
+    margin-left: 20px;
+    display: block;
+    min-width: 400px;
+    padding: 0;
+    margin: 10px 0;
+    border: 2px solid #ffeb3b;
+    border-radius: 5px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.budget-label {
+    display: block !important;
+    text-align: right;
+    padding: 0;
+    margin: 14px 0;
+    line-height: 30px;
+    padding-left: 5px;
+}
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px; 
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
   

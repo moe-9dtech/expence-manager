@@ -66,8 +66,8 @@ var _row = null; //for edit and update purposes
 btn.addEventListener('click', function (e) {
   e.preventDefault();
 
-  var td = $('#expences').DataTable();
   
+  var _tableData = $('#expences').DataTable();
   //td.clear().destroy();
   
 
@@ -108,12 +108,15 @@ if ( document.getElementById("submit-btn").innerText == "Save" && dateValidation
   row.appendChild(td3);
   row.appendChild(td4);
   row.appendChild(td5);
-  dt.destroy();  
+  //_tableData.destroy();  
   table.querySelector('tbody').appendChild(row);
-  } else { updateRow() }
+  } else if (document.getElementById("submit-btn").innerText == "Update") {
+    updateRow();
+  } else return;
 
-  td.rows.add(tableData);
-  td.draw();
+  
+  //_tableData.rows.add(tableData);
+  //_tableData.draw();
   
   formReset();
 }); //btn.addEventListener
@@ -214,7 +217,7 @@ window.onload = function() {
       table.querySelector('tbody').appendChild(row);
 
       if(i == store.length - 1) {
-        dt = $('#expences').DataTable({
+        _tableData = $('#expences').DataTable({
           // paging: true,
           pageLength: 5
         });
