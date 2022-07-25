@@ -188,6 +188,7 @@ function deleteRow(td){
 
 /** RETRIEVE TABLE AFTER RELOAD */
 window.onload = function() {  
+  window.localStorage.setItem( "tableResults", JSON.stringify(tableData )); 
   const tbdata = localStorage.getItem("tableResults");
   if (tbdata !== null ){
     const store = JSON.parse(tbdata);

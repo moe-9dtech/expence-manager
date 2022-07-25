@@ -6,12 +6,35 @@
     <link rel="stylesheet" type="text/css" href="DataTables/datatables.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   
-    <title>Expence Management</title>
+    <title>SPA Main</title>
   </head>
   <header>
     <div class="header-title">
       <h3>Expences Manager</h3>
     </div>  
+
+    <nav>
+      <div class="navigation">
+        <div class="add">
+          <button class="add-page-btn" onclick="location.href='index.html'" title="Add a new record" value="&#xF3F2;">
+            <span><image class="add-icon" src="assets/add.png" height="20" width="20"></image><label for="">Add record</label></span>
+          </button>
+        </div>
+  
+        <div class="budget">
+          <button class="budget-page-btn" onclick="location.href='budget.html'" title="Set Budget" value="&#xF3F2;">
+            <span><image class="budget-icon" src="assets/coin.svg" height="20" width="20"></image><label for="">Set Budget</label></span>
+          </button>
+        </div>
+  
+        <div class="chart">
+          <button class="chart-page-btn" onclick="location.href='charts.html'" title="View Charts" value="&#xF3F2;">
+            <span><image class="chart-icon" src="assets/graph-up.svg" height="20" width="20"></image><label for="">Statistics</label></span>
+          </button>
+        </div>
+      </div><!--.navigation-->
+    </nav>
+
   </header>
   <body>
     <div class="form-container">
@@ -66,38 +89,15 @@
           </tbody>
         </table>
       </div><!--data-table-->
-      
-
     </div><!--.form-container-->
-
-    <div class="navigation">
-      <div class="chart">
-        <button class="chart-page-btn" onclick="location.href='charts.html'" value="&#xF3F2;">
-          <image class="chart-icon" src="assets/graph-up.svg" height="36" width="36"> </image>
-        </button>
-      </div>
-
-      <div class="budget">
-        <button class="budget-page-btn" onclick="location.href='budget.html'" value="&#xF3F2;">
-          <image class="budget-icon" src="assets/coin.svg" height="36" width="36">  </image>
-        </button>
-      </div>
-    </div>
-    
-    
-    
-
-    
+    <div class="spacer"></div>
   </body>
-
   <footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="DataTables/datatables.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src='index.js'></script>
-    
-    
 
   </footer>
 </html>

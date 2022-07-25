@@ -6,9 +6,17 @@
  * {
     box-sizing: border-box;
   }
+  /* nav bar */
+
+  nav {
+    background-color: rgb(4, 6, 36);
+    margin-bottom: 30px;
+  }
+
  /* Header Section */
  .header-title {
     text-align: center;
+    padding-top: 40px;
  }
 /*************************/
 
@@ -63,19 +71,20 @@ form {
     display: inline-block;
     
 }
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 80%;
     margin: 30px 0 0 0;
     /* display: inline; */
-  }
+}
   
-  td, th {
+td, th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
-  }
+padding: 8px;
+}
 
 .navigation {
     text-align: center;
@@ -83,14 +92,41 @@ table {
   
 .chart {
     display : inline-block;
-    margin: 50px 10px 60px 0;
 }
 
 .chart-page-btn {
     border: none;
     background-color: #ffeb3b;
-    padding: 5px 15px;
+    padding: 5px 10px;
     border-radius: 5px;
+}
+
+.chart-icon {
+    margin-right: 5px;
+}
+
+
+.chart-page-btn:hover {
+    background-color: #59ffe9;
+}
+
+.add {
+    display : inline-block;
+}
+
+.add-page-btn {
+    border: none;
+    background-color: #ffeb3b;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.add-icon {
+    margin-right: 5px;
+}
+
+.add-page-btn:hover {
+    background-color: #59ffe9;
 }
 
 .chart .chart-icon:hover {
@@ -99,7 +135,7 @@ table {
 
 .budget {
     display: inline-block;
-    margin: 50px 0 60px 0;
+    margin: 50px 10px;
 }
 
 .budget-page-btn {
@@ -109,8 +145,21 @@ table {
     border-radius: 5px;
 }
 
+.budget-icon {
+    margin-right: 5px;
+}
+
+
+.budget-page-btn:hover {
+    background-color: #59ffe9;
+}
+
 .budget .budget-icon:hover {
     cursor: pointer;
+}
+
+.spacer {
+    margin-bottom: 40px;
 }
 
 
@@ -138,7 +187,6 @@ table {
     padding-left: 5px;
 }
 
-
 .column {
     float: left;
     width: 50%;
@@ -150,6 +198,3 @@ table {
     display: table;
     clear: both;
   }
-
-
-  
