@@ -1,33 +1,33 @@
 //#07FEAB #00E7F0
 let vals = JSON.parse(localStorage.getItem("tableResults"));
 let initVals = {inputHealth: '0', inputFood: '0', inputLoan: '0', inputEntertainment: '0', inputTransportation: '0'};
-let budget = JSON.parse(localStorage.getItem("budgetVal"));
+let budget = JSON.parse(localStorage.getItem("budgetVal") ?? '[]');
 let initBudget = {inputHealth: '0', inputFood: '0', inputLoan: '0', inputEntertainment: '0', inputTransportation: '0'};
 
 let finalArray = {'Health': 0, 'Food': 0, 'Loan': 0, 'entertainment': 0, 'transportation': 0};
 console.log(budget);
+
+
+if (vals === null || budget === null || vals === "" || budget === "") {
+   const element = document.getElementById("no-data");
+   element.classList.remove('not-visible');
+   
+} else 
+// if (exp_key === null || exp_val === null || bud_val === null) {
+//   const element = document.getElementById("no-data");
+//   element.classList.remove('not-visible');
+// } else
+ 
 // get the sum of separate categories
-  if ( vals == null || "" ){
-    initVals.forEach(function(d){
-      if(Object.keys(finalArray).indexOf(d.inputType) != -1)
-      finalArray[`${d.inputType}`] += Number(d.inputAmount); 
-      });
+vals.forEach(function(d){
+if(Object.keys(finalArray).indexOf(d.inputType) != -1)
+finalArray[`${d.inputType}`] += Number(d.inputAmount); 
+});
 
-  } else {
-
-    vals.forEach(function(d){
-    if(Object.keys(finalArray).indexOf(d.inputType) != -1)
-    finalArray[`${d.inputType}`] += Number(d.inputAmount); 
-    });
-
-    let exp_key = Object.keys(finalArray);
-    let exp_val = Object.values(finalArray);
-    let bud_val = Object.values(budget);
-  }
-
-  
-
-
+console.log(budget);
+let exp_key = Object.keys(finalArray);
+let exp_val = Object.values(finalArray);
+let bud_val = Object.values(budget);
 
 const labels = exp_key;
 

@@ -1,12 +1,11 @@
+<!DOCTYPE html>
 <html lang='en'>
   <head>
     <meta charset='utf-8' />
-    <link href='style.css' rel='stylesheet' />
-    <link rel="stylesheet" type="text/css" href="DataTables/datatables.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  
-    <title>SPA Chart</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='node_modules/fullcalendar/main.css' rel='stylesheet' />
   </head>
+
   <header>
     <nav>
       <div class="navigation">
@@ -37,25 +36,21 @@
       </div><!--.navigation-->
     </nav>
     <div class="header-title">
-      <h3>Charts page</h3>
+      <h3>Calendar page</h3>
     </div>
   </header>
+
   <body>
-
-    <div id="no-data" class="no-data not-visible">
-      <p>Please Add data first to draw the charts!</p>
-    </div>
-
-    <div class="charts">
-      <div class="column">
-        <canvas id="barChart" width="400" height="400"></canvas>
-      </div>
-      <div class="column">
-        <canvas id="lineChart" width="400" height="400"></canvas>
-      </div>
-    </div>
+    
+    
+    <div id='calendar'></div>
+    
+    
+    
   </body>
   <footer>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src='charts.js'></script>
+    <script src="node_modules/fullcalendar/main.js"></script>
+    <script src="calendar.js"></script>
   </footer>
+
+</html>

@@ -10,13 +10,16 @@
 
   nav {
     background-color: rgb(4, 6, 36);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  body {
+    margin: 0;
   }
 
  /* Header Section */
  .header-title {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 10px;
  }
 /*************************/
 
@@ -92,6 +95,7 @@ padding: 8px;
   
 .chart {
     display : inline-block;
+    margin-right: 10px;
 }
 
 .chart-page-btn {
@@ -103,6 +107,7 @@ padding: 8px;
 
 .chart-icon {
     margin-right: 5px;
+    vertical-align: middle;
 }
 
 
@@ -123,6 +128,7 @@ padding: 8px;
 
 .add-icon {
     margin-right: 5px;
+    vertical-align: middle;
 }
 
 .add-page-btn:hover {
@@ -147,6 +153,7 @@ padding: 8px;
 
 .budget-icon {
     margin-right: 5px;
+    vertical-align: middle;
 }
 
 
@@ -198,3 +205,26 @@ padding: 8px;
     display: table;
     clear: both;
   }
+
+  /********************************
+            Budget Page
+*********************************/
+.no-data {
+    text-align: center;
+    font-size: 25;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(4, 6, 36);
+}
+
+.not-visible {
+    display: none;
+}
+
+/********************************
+            Budget Page
+*********************************/
+
+.fc {
+    margin: 0 10px;
+}
